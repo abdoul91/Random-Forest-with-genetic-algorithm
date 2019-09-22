@@ -15,10 +15,7 @@ from deap import tools
 from deap import algorithms
 import random
 
-
-from preprocessing import preprocessing
-
- # Ramdom Forest With  Genetic algorithm fine-tuning hyper-parameter
+# Ramdom Forest With  Genetic algorithm fine-tuning hyper-parameter
  
 # This folllowing hyper-paramter will be fine tune using genetic algorithm :
 
@@ -30,12 +27,6 @@ from preprocessing import preprocessing
 
 ### Genetic algorithm
  
-"""load data"""
-
-file = "transactions.csv"
-
-
-X_train, X_val, X_test, y_train, y_val, y_test = preprocessing(file)
 
 ### Defines hyper-parameters boundary so genetic algorithm search in this space
 n_estimators_low     = 50
